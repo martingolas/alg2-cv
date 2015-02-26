@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cv1", "cv1\cv1.vcxproj", "{8689922E-DA82-4AF6-AA49-F9CE3774660C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cv2", "cv2\cv2.vcxproj", "{8F8C83A5-F77F-4AE6-BE85-4DA09AD2EA33}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cv3", "cv3\cv3.vcxproj", "{C552C5E3-9125-498C-AB43-5B6A8D3C6812}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,6 +19,14 @@ Global
 		{8689922E-DA82-4AF6-AA49-F9CE3774660C}.Debug|Win32.Build.0 = Debug|Win32
 		{8689922E-DA82-4AF6-AA49-F9CE3774660C}.Release|Win32.ActiveCfg = Release|Win32
 		{8689922E-DA82-4AF6-AA49-F9CE3774660C}.Release|Win32.Build.0 = Release|Win32
+		{8F8C83A5-F77F-4AE6-BE85-4DA09AD2EA33}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F8C83A5-F77F-4AE6-BE85-4DA09AD2EA33}.Debug|Win32.Build.0 = Debug|Win32
+		{8F8C83A5-F77F-4AE6-BE85-4DA09AD2EA33}.Release|Win32.ActiveCfg = Release|Win32
+		{8F8C83A5-F77F-4AE6-BE85-4DA09AD2EA33}.Release|Win32.Build.0 = Release|Win32
+		{C552C5E3-9125-498C-AB43-5B6A8D3C6812}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C552C5E3-9125-498C-AB43-5B6A8D3C6812}.Debug|Win32.Build.0 = Debug|Win32
+		{C552C5E3-9125-498C-AB43-5B6A8D3C6812}.Release|Win32.ActiveCfg = Release|Win32
+		{C552C5E3-9125-498C-AB43-5B6A8D3C6812}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
