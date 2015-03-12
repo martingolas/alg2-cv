@@ -114,48 +114,48 @@ string InfixToPostfix(string input)
 	return output;
 }
 
-int EvalPostfix(string input)
-{
-	// Zasobnik
-	Stack st;
-	Init(st);
-
-	// Iteracni promenna
-	size_t i = 0;
-
-	while (i < input.length())
-	{
-		size_t tmp = i;
-		if (isalnum(input[i]))
-		{
-			Push(st, stoi(&input[i], &tmp));
-			i += (tmp + 1); // Posun na 1. nasledujici znak po mezere
-		}
-		else
-		{
-			switch (input[i])
-			{
-				case '+':
-					// Soucet
-					Push(st, Pop(st) + Pop(st));
-					break;
-				case '*':
-					// Soucin
-					Push(st, Pop(st) * Pop(st));
-					break;
-				case '-':
-					// Rozdil
-					Push(st, Pop(st) - Pop(st));
-					break;
-				default:
-					cerr << "Unknown operator." << endl;
-					return;
-			}
-			i += 2; // Posun na 1. nasledujici znak po mezere
-		}
-	}
-	return (int)Pop(st);
-}
+//int EvalPostfix(string input)
+//{
+//	// Zasobnik
+//	Stack st;
+//	Init(st);
+//
+//	// Iteracni promenna
+//	size_t i = 0;
+//
+//	while (i < input.length())
+//	{
+//		size_t tmp = i;
+//		if (isalnum(input[i]))
+//		{
+//			Push(st, stoi(&input[i], &tmp));
+//			i += (tmp + 1); // Posun na 1. nasledujici znak po mezere
+//		}
+//		else
+//		{
+//			switch (input[i])
+//			{
+//				case '+':
+//					// Soucet
+//					Push(st, Pop(st) + Pop(st));
+//					break;
+//				case '*':
+//					// Soucin
+//					Push(st, Pop(st) * Pop(st));
+//					break;
+//				case '-':
+//					// Rozdil
+//					Push(st, Pop(st) - Pop(st));
+//					break;
+//				default:
+//					cerr << "Unknown operator." << endl;
+//					return;
+//			}
+//			i += 2; // Posun na 1. nasledujici znak po mezere
+//		}
+//	}
+//	return (int)Pop(st);
+//}
 
 
 /**
@@ -164,7 +164,7 @@ int EvalPostfix(string input)
 void main()
 {
 	// Vyhodnoceni postfix vyrazu
-	cout << EvalPostfix("2 5 +") << endl;
+	//cout << EvalPostfix("2 5 +") << endl;
 	cin.get();
 }
 

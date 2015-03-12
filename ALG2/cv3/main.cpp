@@ -76,6 +76,16 @@ void elapsedTime(const clock_t &start)
 
 void main()
 {
+	struct Ticket {
+		int seatNumber;
+		const char *Name;
+		float price;
+	};
+
+
+	Ticket tickets[48];
+
+
 	srand(time(NULL));
 	clock_t start;
 
